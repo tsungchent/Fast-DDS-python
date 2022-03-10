@@ -53,6 +53,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           path: src/fastdds_python
+          ref: feature/windows-ci
 
       - name: Fetch repositories
         shell: pwsh
@@ -91,6 +92,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           path: src/fastdds_python
+          ref: feature/windows-ci
 
       - name: Install apt dependencies
         run: |
