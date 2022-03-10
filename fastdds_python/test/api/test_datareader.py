@@ -1,4 +1,8 @@
-import fastdds
+import os
+import os.name == 'nt':
+    import win32api
+    win32api.LoadLibrary('_test_complete.pyd')
+
 import test_complete
 
 

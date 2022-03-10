@@ -1,8 +1,13 @@
 import datetime
 
+import os
+import os.name == 'nt':
+    import win32api
+    win32api.LoadLibrary('_test_complete.pyd')
+    win32api.LoadLibrary('_fastdds_python.pyd')
+
 import fastdds
 import test_complete
-
 
 class DataWriterListener (fastdds.DataWriterListener):
     def __init__(self):
