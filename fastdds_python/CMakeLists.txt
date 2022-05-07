@@ -29,14 +29,12 @@ project(fastdds_python VERSION 1.0.1)
 ###############################################################################
 # Dependencies
 ###############################################################################
-
 find_package(SWIG REQUIRED)
 include(${SWIG_USE_FILE})
 set(CMAKE_SWIG_FLAGS "")
 
 find_package (Python3 COMPONENTS Interpreter Development REQUIRED)
-
-find_package(fastrtps REQUIRED)
+# find_package(fastrtps REQUIRED)
 
 ###############################################################################
 # Project subdirectories

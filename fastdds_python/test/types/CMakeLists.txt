@@ -25,10 +25,8 @@ message(STATUS "Configuring python wrapper for types in test_complete...")
 
 project(test_complete)
 
-find_package(fastcdr REQUIRED)
-find_package(fastrtps REQUIRED)
-
-
+# find_package(fastcdr REQUIRED)
+# find_package(fastrtps REQUIRED)
 set(${PROJECT_NAME}_FILES
     test_complete.cxx
     test_completePubSubTypes.cxx
